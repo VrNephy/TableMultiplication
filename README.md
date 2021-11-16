@@ -48,7 +48,6 @@ Concernant la première partie, il nous est demandé de créer un formulaire où
 
 ![img](https://pic.infini.fr/4D4ZUa0H/16qDurY8.png)
 
-1
 
  
 
@@ -60,9 +59,8 @@ App.component.html
 
  
 
-![img](file:///C:/Users/lucas/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif)
+![img](https://pic.infini.fr/0f9A1IgH/Btr3fYVD.png)
 
-2
 
 Ici, on appel « table-multilplication » ainsi que « tables-multiplication »
 
@@ -74,9 +72,9 @@ Et voici à quoi ressemble app.component.ts
 
  
 
-![img](file:///C:/Users/lucas/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif)
+![img](https://pic.infini.fr/qBWW5Jol/0NnSXukD.png)
 
-3
+
 
 On commence par importer les packages, puis on annonce les Attributs. On créer également les formulaires.
 
@@ -84,19 +82,19 @@ On commence par importer les packages, puis on annonce les Attributs. On créer 
 
 Dans « app.component.html » on fait appel à « tableMultilplication » pour le premier formulaire.
 
-![img](file:///C:/Users/lucas/AppData/Local/Temp/msohtmlclip1/01/clip_image008.gif)
+![img](https://pic.infini.fr/2QFYGY7g/qCDZi1QY.png)
 
-4
+
 
 Concernant ce code, ``ngfor`` parcours compteur avant d’utiliser la variable chiffre donné précédemment par l’utilisateur puis x qui se trouve dans ``table-multilplication.component.ts``
 
  
 
-Ici le formulaire demande à l’utilisateur un nombre qui sera par la suite utilisé dans ``table-multilplication.component.ts ``![img](file:///C:/Users/lucas/AppData/Local/Temp/msohtmlclip1/01/clip_image010.gif)
+Ici le formulaire demande à l’utilisateur un nombre qui sera par la suite utilisé dans ``table-multilplication.component.ts ``![img](https://pic.infini.fr/iMBtSeY8/t06GRHBV.png)
 
-![img](file:///C:/Users/lucas/AppData/Local/Temp/msohtmlclip1/01/clip_image012.gif)
+![img](https://pic.infini.fr/ySaAuoFR/KLKA9s2z.png)
 
-5 ET 6
+
 
 Tout d’abord, on communique avec le composant parent à l’aide de input et output. Ensuite il y a un tableau x ici nommé compteur (nom porte à confusion). N’oublions pas qu’au tout début, on importe les packages nécessaires.
 
@@ -117,9 +115,8 @@ Dans la partie 2, l’utilisateur entre un nombre dans un nouveau champ. Ce dern
 
 ``Tables-Multiplication.component.html``
 
-![img](file:///C:/Users/lucas/AppData/Local/Temp/msohtmlclip1/01/clip_image014.gif)
+![img](https://pic.infini.fr/vVY8rMVy/LLoZUM7R.png)
 
-7
 
 Ici, le code est relativement similaire à la partie 1.
 
@@ -129,11 +126,11 @@ Ce code html est lié à :
 
 
 
-![img](file:///C:/Users/lucas/AppData/Local/Temp/msohtmlclip1/01/clip_image016.gif)
+![img](https://pic.infini.fr/7WLv5Nip/zQaskgpW.png)
 
-**![img](file:///C:/Users/lucas/AppData/Local/Temp/msohtmlclip1/01/clip_image018.gif)**
+**![img](https://pic.infini.fr/4xbadetk/t6isRuzB.png)**
 
-**8 et 9**
+
 
 Avant toute chose, on importe les packages
 
@@ -145,17 +142,17 @@ Après un peu de css (ajout de bulma et quelques autres légères modifications 
 
  
 
-**Screenshot 10 et 11**
 
- ![image-20211116190423618](C:\Users\lucas\AppData\Roaming\Typora\typora-user-images\image-20211116190423618.png)
 
-![image-20211116190953214](C:\Users\lucas\AppData\Roaming\Typora\typora-user-images\image-20211116190953214.png)
+ ![img](https://pic.infini.fr/xVbFJoxn/k4sU083V.PNG)
+
+![img](https://pic.infini.fr/X3rkdUuD/yZkYwE5f.PNG)
 
 
 
 <u>**Diagramme UML**</u>
 
-![ulm](C:\Users\lucas\OneDrive\Bureau\multi\multi\ulm.PNG)
+![ulm](https://pic.infini.fr/XkCFvVZc/EmUcwWao.PNG)
 
 
 
