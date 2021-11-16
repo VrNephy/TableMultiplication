@@ -1,27 +1,178 @@
-# TableMultiplication
+<u>**TP Multiplication**</u>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
+C’est un TP de développement d’application permettant d’afficher des tables de multiplication (Jusqu’à 10).
 
-## Development server
+C’est un projet de deuxième année de BTS SIO SLAM donné par Monsieur Chamillard. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Outils : Angular 13.0.1 
 
-## Code scaffolding
+Le projet a démarré le lundi 15 novembre 2021 et s’est terminé le mardi 16 novembre 2021.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<u>**Lien GitHub**</u>
 
-## Build
+https://github.com/VrNephy/TableMultiplication
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<u>**Versions utilisées**</u>
 
-## Running unit tests
+Système d’exploitation : Windows 10
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Angular 13.0.1 
 
-## Running end-to-end tests
+Visual studio 1.62.2
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<u>**Mise en place/ Commandes**</u>
 
-## Further help
+ 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Tout d’abord il faut créer le projet Angular. Pour cela nous exécutons la commande suivante : ng new TableMultiplication –style –routing=false
+
+A l’emplacement voulu.
+
+ 
+
+Après avoir testé que tout s’est bien déroulé, on essai de lancer le serveur avec la commande : ng serve
+
+Ensuite, nous allons créer un nouveau composant que nous allons appeler « table-multiplication » via la commande : ng g c table-multiplication
+
+ 
+
+Mention importante: Lors de la création du composant table multiplication, j'ai malencontreusement fait une faute de frappe. Tout au long de ce readme, table-multilplication est l'orthographe correcte pour ce composant.
+
+<u>**Partie 1**</u>
+
+Concernant la première partie, il nous est demandé de créer un formulaire où l’utilisateur pourra rentrer un chiffre.
+
+ Si l’on prend par exemple la table de 7, sa table de 0 à 10 apparait.
+
+
+
+![img](file:///C:/Users/lucas/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif)
+
+1
+
+ 
+
+Voici à quoi ressemble le code HTML derrière cette page :
+
+ 
+
+App.component.html
+
+ 
+
+![img](file:///C:/Users/lucas/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif)
+
+2
+
+Ici, on appel « table-multilplication » ainsi que « tables-multiplication »
+
+ 
+
+Et voici à quoi ressemble app.component.ts
+
+ 
+
+ 
+
+![img](file:///C:/Users/lucas/AppData/Local/Temp/msohtmlclip1/01/clip_image006.gif)
+
+3
+
+On commence par importer les packages, puis on annonce les Attributs. On créer également les formulaires.
+
+ 
+
+Dans « app.component.html » on fait appel à « tableMultilplication » pour le premier formulaire.
+
+![img](file:///C:/Users/lucas/AppData/Local/Temp/msohtmlclip1/01/clip_image008.gif)
+
+4
+
+Concernant ce code, ``ngfor`` parcours compteur avant d’utiliser la variable chiffre donné précédemment par l’utilisateur puis x qui se trouve dans ``table-multilplication.component.ts``
+
+ 
+
+Ici le formulaire demande à l’utilisateur un nombre qui sera par la suite utilisé dans ``table-multilplication.component.ts ``![img](file:///C:/Users/lucas/AppData/Local/Temp/msohtmlclip1/01/clip_image010.gif)
+
+![img](file:///C:/Users/lucas/AppData/Local/Temp/msohtmlclip1/01/clip_image012.gif)
+
+5 ET 6
+
+Tout d’abord, on communique avec le composant parent à l’aide de input et output. Ensuite il y a un tableau x ici nommé compteur (nom porte à confusion). N’oublions pas qu’au tout début, on importe les packages nécessaires.
+
+Enfin, submitForm1 est chargé de vérifier que la valeur n’est pas égale à rien ou soit nulle. Dans le cas contraire la valeur est automatiquement 1.
+
+ 
+
+ 
+
+
+ **<u>Partie 2</u>**
+
+ 
+
+Dans la partie 2, l’utilisateur entre un nombre dans un nouveau champ. Ce dernier définira le nombre de tables de multiplication qui s’afficheront. Si l’utilisateur n’entre aucun nombre, alors 10 tables s’afficheront (de 1 à 10).
+
+ 
+
+``Tables-Multiplication.component.html``
+
+![img](file:///C:/Users/lucas/AppData/Local/Temp/msohtmlclip1/01/clip_image014.gif)
+
+7
+
+Ici, le code est relativement similaire à la partie 1.
+
+Ce code html est lié à :
+
+``Tables-Multiplication.component.ts``
+
+
+
+![img](file:///C:/Users/lucas/AppData/Local/Temp/msohtmlclip1/01/clip_image016.gif)
+
+**![img](file:///C:/Users/lucas/AppData/Local/Temp/msohtmlclip1/01/clip_image018.gif)**
+
+**8 et 9**
+
+Avant toute chose, on importe les packages
+
+Encore une fois, input et output permettent de communiquer avec le composant parent. Ensuite, nous avons un tableau cette fois nommé tab2. Puis un second commit qui lui est utilisé uniquement par le deuxième formulaire (pour la partie 2). Donc si la valeur entrée n’est pas égale à ‘’ et qu’elle n’est pas nulle, alors on prend la valeur donnée par l’utilisateur. Sinon, la valeur est 10 par défaut. Ce qui veut dire que de base, il y a 10 tables, de 1 à 10. 
+
+ 
+
+Après un peu de css (ajout de bulma et quelques autres légères modifications css) voici à quoi le site ressemble.
+
+ 
+
+**Screenshot 10 et 11**
+
+ ![image-20211116190423618](C:\Users\lucas\AppData\Roaming\Typora\typora-user-images\image-20211116190423618.png)
+
+![image-20211116190953214](C:\Users\lucas\AppData\Roaming\Typora\typora-user-images\image-20211116190953214.png)
+
+
+
+<u>**Diagramme UML**</u>
+
+![ulm](C:\Users\lucas\OneDrive\Bureau\multi\multi\ulm.PNG)
+
+
+
+
+
+<u>**Conclusion**</u>
+
+Ce projet était une bonne initiation à Angular. Bien que les TD fait précédemment étaient bien guidés, ce projet m'a parut certes plus compliqué mais à la fois plus instructif. Le code en soit n'est pas d'une complexité hors norme. Cependant, l'architecture s'est avérer être un problème majeur pour moi. 
+
+
+
+<u>**Sources**</u>
+
+ 
+
+https://www.youtube.com/watch?v=k5E2AVpwsko
+
+TD 1, 2 et 3 Login.
+
+ 
