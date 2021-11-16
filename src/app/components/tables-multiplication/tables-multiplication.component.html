@@ -1,0 +1,30 @@
+<style>
+    body {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<body>
+<form [formGroup]="nombreTabForm" (ngSubmit)="submitForm2()">
+    <div>
+        <h3 class="title is-3">nombre de tables </h3>
+        <div class="control">
+            <input class="input is-success" formControlName="tableau" type="number" placeholder="nombreTab" value="">
+        </div>
+    </div>
+    <div class="field-is-grouped">
+        <div class="control">
+            <button>Valider</button>
+        </div>
+    </div>
+</form>
+
+
+<div *ngIf="isSubmitted" class="result">
+        <ul *ngFor="let i of nbTables">
+                <li *ngFor="let numbers of tab2(11);let x = index">{{ nbTables[i-1] }} X {{ x }}  = {{ x * nbTables[i-1] }} </li>
+                <li> ____________________ </li>
+    </ul>
+</div>
+</body>

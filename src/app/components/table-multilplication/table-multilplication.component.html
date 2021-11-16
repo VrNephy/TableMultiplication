@@ -1,0 +1,41 @@
+<style>
+    body {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<body>
+<div>
+    <header>
+        <p>
+            Table de {{ chiffre}}
+        </p>
+
+    </header>
+    <form [formGroup]="tableForm" (ngSubmit)="submitForm1()">
+    <div>
+        <label>Choisissez un chiffre</label>
+        <div class="control">
+            <input class="input is-success" formControlName="chiffre" type="number" placeholder="chiffre" value="">
+        </div>
+    </div>
+    <div class="field is-grouped">
+        <div class="control">
+            <button>Valider</button>
+        </div>
+    </div>
+</form>
+
+    <div>
+        <div>
+            <ul>
+                <li *ngFor="let number of compteur(11);let x = index">{{ chiffre }} * {{x}} = {{ chiffre * x }} </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+</body>
+    
+    
