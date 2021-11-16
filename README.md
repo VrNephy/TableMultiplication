@@ -46,7 +46,7 @@ Concernant la première partie, il nous est demandé de créer un formulaire où
 
 
 
-![img](file:///C:/Users/lucas/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif)
+![img](https://drive.google.com/file/d/1CfpYdjVCfutztxpAzuUgFzUtIg8PlRUb/view?usp=sharing)
 
 1
 
