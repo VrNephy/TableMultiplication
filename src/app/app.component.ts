@@ -9,12 +9,8 @@ import { FormControl, FormGroup } from '@angular/forms';
 export class AppComponent {
 
   chiffre: number = 0;
-  nbTables = Array();
-
   nombreTabForm!: FormGroup;
   tableForm!: FormGroup;
-  isSubmitted = false;
-  badChiffre = false;
   tableau: number = 0;
 
 
